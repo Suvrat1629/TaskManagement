@@ -10,7 +10,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://task-management-1-nni5.onrender.com',
+  origin: 'https://taskmanagement-axgs.onrender.com',
   credentials: true
 }));
 
