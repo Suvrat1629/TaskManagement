@@ -10,7 +10,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'task-management-nine-beige.vercel.app',
+  origin: 'https://task-management-nine-beige.vercel.app/',
   credentials: true
 }));
 
