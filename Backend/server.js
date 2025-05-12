@@ -10,7 +10,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://taskmanagement-axgs.onrender.com',
+  origin: 'task-management-nine-beige.vercel.app',
   credentials: true
 }));
 
