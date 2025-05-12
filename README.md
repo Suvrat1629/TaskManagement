@@ -40,32 +40,6 @@ A full-stack task management application built with the MERN stack (MongoDB, Exp
 - **Other**:
   - CORS middleware
 
-## Project Structure
-```
-TaskManagement/
-├── client/                     # Frontend (React)
-│   ├── src/
-│   │   ├── components/        # Reusable React components
-│   │   ├── pages/             # Page components (e.g., TaskList, TaskForm)
-│   │   ├── App.js             # Main app component
-│   │   ├── index.js           # Entry point
-│   │   └── ...
-│   ├── public/                # Static assets
-│   ├── package.json           # Frontend dependencies
-│   └── ...
-├── server/                    # Backend (Node.js/Express)
-│   ├── src/
-│   │   ├── routes/            # API routes (e.g., tasks.js)
-│   │   ├── models/            # MongoDB models (e.g., Task.js)
-│   │   ├── controllers/       # Request handlers
-│   │   ├── server.js          # Main server file
-│   │   └── ...
-│   ├── package.json           # Backend dependencies
-│   └── ...
-├── README.md                  # Project documentation
-└── .gitignore                 # Files to ignore in Git
-```
-
 ## Setup Instructions
 
 ### Prerequisites
@@ -96,17 +70,19 @@ TaskManagement/
 ### Frontend Setup
 1. **Navigate to the Frontend Directory**:
    ```bash
-   cd TaskManagement/client
+   cd TaskManagement/Frontend
    ```
 
 2. **Install Dependencies**:
    ```bash
+   cd Backend
    npm install
    ```
 
 3. **Run the Frontend**:
    ```bash
-   npm start
+   cd Frontend
+   npm run dev
    ```
    The app will open at `http://localhost:3000` and is configured to communicate with the backend at `https://taskmanagement-axgs.onrender.com`.
 
@@ -124,7 +100,7 @@ TaskManagement/
    - Click **New** > **Web Service** and connect your GitHub repository.
    - Configure:
      - **Environment**: Node.js
-     - **Root Directory**: `server`
+     - **Root Directory**: `Backend`
      - **Build Command**: `npm install`
      - **Start Command**: `npm start`
 
@@ -134,14 +110,14 @@ TaskManagement/
 
 ### Deploying Frontend on Vercel
 1. **Push Code to GitHub**:
-   Ensure the `client` folder is part of the repository.
+   Ensure the `Frontend` folder is part of the repository.
 
 2. **Create a New Project on Vercel**:
    - Log in to [Vercel](https://vercel.com).
    - Click **New Project** and import your GitHub repository.
    - Configure:
      - **Framework Preset**: React
-     - **Root Directory**: `client`
+     - **Root Directory**: `Frontend`
      - **Build Command**: `npm run build`
      - **Output Directory**: `build`
 
